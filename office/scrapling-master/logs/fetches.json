@@ -1,0 +1,9 @@
+[
+  {
+    "timestamp": "2026-03-09T14:21:14.915Z",
+    "url": "https://example.com/products",
+    "mode": "🛡️ Stealth",
+    "items": 3,
+    "output": "output/scraped-1773066074914.json"
+  }
+]
