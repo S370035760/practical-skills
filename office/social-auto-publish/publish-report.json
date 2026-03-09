@@ -1,0 +1,34 @@
+[
+  {
+    "timestamp": "2026-03-09T13:55:42.032Z",
+    "title": "AI 自动写周报的 5 个技巧",
+    "platforms": [
+      "wechat",
+      "zhihu",
+      "xiaohongshu"
+    ],
+    "results": [
+      {
+        "platform": "wechat",
+        "success": true,
+        "url": "https://wechat.com/post/1773064541030",
+        "mode": "draft",
+        "scheduledAt": null
+      },
+      {
+        "platform": "zhihu",
+        "success": true,
+        "url": "https://zhihu.com/post/1773064541531",
+        "mode": "draft",
+        "scheduledAt": null
+      },
+      {
+        "platform": "xiaohongshu",
+        "success": true,
+        "url": "https://xiaohongshu.com/post/1773064542032",
+        "mode": "draft",
+        "scheduledAt": null
+      }
+    ]
+  }
+]
