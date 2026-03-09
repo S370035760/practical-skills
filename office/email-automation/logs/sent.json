@@ -1,0 +1,10 @@
+[
+  {
+    "id": "MSG-1773065253670",
+    "timestamp": "2026-03-09T14:07:33.670Z",
+    "to": "test@example.com",
+    "subject": "测试邮件",
+    "scheduled": null,
+    "status": "sent"
+  }
+]
