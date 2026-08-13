@@ -1,0 +1,5 @@
+interface:
+  display_name: "负动产与全球配置"
+  short_description: "用书中框架筛查负动产并评估全球长期投资趋势"
+  default_prompt: "Use $negative-asset-global-allocation to assess this asset or investment theme with book-grounded logic and current evidence."
+
