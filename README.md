@@ -99,3 +99,42 @@ openclaw skills install social-auto-publish
 *Last updated: 2026-03-09*  
 *作者：[@S370035760](https://github.com/S370035760)*  
 *🦞 让每个人都能掌握 AI 技能，实现自动化赚钱*
+
+---
+
+## 负动产与全球配置
+
+仓库内置可直接调用的技能：`negative-asset-global-allocation`。
+
+它将《负动产时代》和《全球视野下的投资机会》转换为可复核的决策流程，适用于：
+
+- 房产、车位、度假房、出租项目和继承资产的负动产筛查
+- 人口、资本、AI、电力、核能、黄金、白银、美股、美债和小金属趋势研究
+- 净处置价值、持有成本、退出流动性和三情景压力测试
+
+### 直接调用
+
+在支持 Codex Skills 的客户端中，将以下目录安装到技能目录：
+
+```text
+negative-asset-global-allocation/
+```
+
+然后直接调用：
+
+```text
+$negative-asset-global-allocation
+```
+
+也可以自然语言触发：
+
+> 用负动产与全球配置技能，评估这个房产/车位是否可能成为负动产，并给出当前数据缺口和压力测试。
+
+入口文件：
+
+- [SKILL.md](./negative-asset-global-allocation/SKILL.md)
+- [全文蒸馏底稿](./negative-asset-global-allocation/references/book-distillation.md)
+- [调用元数据](./negative-asset-global-allocation/agents/openai.yaml)
+
+技能不会承诺收益、代替下单或把书中旧数据冒充当前事实；涉及“现在”的判断需要补充当前来源和日期。
+
