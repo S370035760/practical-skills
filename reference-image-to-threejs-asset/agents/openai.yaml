@@ -1,0 +1,4 @@
+interface:
+  display_name: "�ο�ͼת Three.js �ʲ�"
+  short_description: "�Ѳο�ͼ�ؽ��ɿɱ༭�Ĵ����� Three.js �ʲ�"
+  default_prompt: "Use $reference-image-to-threejs-asset to rebuild this reference image as a code-only low-poly Three.js asset with a CDN preview and a Vite TypeScript editor."
