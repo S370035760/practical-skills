@@ -138,3 +138,43 @@ $negative-asset-global-allocation
 
 技能不会承诺收益、代替下单或把书中旧数据冒充当前事实；涉及“现在”的判断需要补充当前来源和日期。
 
+---
+
+## 参考图转 Three.js 资产
+
+仓库内置可直接调用的技能：`reference-image-to-threejs-asset`。
+
+它把一张或多张参考图重建成低多边形、纯代码的 Three.js 资产，并同时输出：
+
+- CDN 单文件 `preview/index.html`
+- Vite + TypeScript 可复用模型模块
+- 参数化 Asset Editor
+- 旋转、线框、动画和配置导出
+- `observed / inferred / unresolved` 参考图不确定性报告
+
+### 直接调用
+
+在支持 Codex Skills 的客户端中，将以下目录安装到技能目录：
+
+```text
+reference-image-to-threejs-asset/
+```
+
+然后直接调用：
+
+```text
+$reference-image-to-threejs-asset
+```
+
+也可以自然语言触发：
+
+> 根据这张参考图，把物体重建成低多边形、纯代码的 Three.js 模型，同时输出 CDN 预览、Vite/TypeScript 模块、Asset Editor 和动画。
+
+入口文件：
+
+- [SKILL.md](./reference-image-to-threejs-asset/SKILL.md)
+- [重建与输出契约](./reference-image-to-threejs-asset/references/reconstruction-and-output-contract.md)
+- [调用元数据](./reference-image-to-threejs-asset/agents/openai.yaml)
+
+技能不使用 GLTF、OBJ、FBX 或图片贴图冒充三维模型；单张图看不到的背面、内部和真实尺寸会明确标记为不确定。
+
