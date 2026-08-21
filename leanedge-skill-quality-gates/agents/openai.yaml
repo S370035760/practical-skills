@@ -1,0 +1,5 @@
+interface:
+  display_name: "LeanEdge 双5.0质量门禁"
+  short_description: "在写技能时内建 Gate A 文档质量与 Gate B 功能评测"
+  default_prompt: "使用 LeanEdge 双5.0门禁设计或审计技能；未通过门禁不得发布。"
+
