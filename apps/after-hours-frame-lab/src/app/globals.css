@@ -1,0 +1,256 @@
+@import 'https://fonts.googleapis.cn/css2?family=IBM+Plex+Mono:wght@400;500;600&family=Noto+Sans+SC:wght@400;500;600;700&display=swap';
+@import 'tailwindcss';
+@import 'tw-animate-css';
+
+@custom-variant dark (&:is(.dark *));
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-sidebar-ring: var(--sidebar-ring);
+  --color-sidebar-border: var(--sidebar-border);
+  --color-sidebar-accent-foreground: var(--sidebar-accent-foreground);
+  --color-sidebar-accent: var(--sidebar-accent);
+  --color-sidebar-primary-foreground: var(--sidebar-primary-foreground);
+  --color-sidebar-primary: var(--sidebar-primary);
+  --color-sidebar-foreground: var(--sidebar-foreground);
+  --color-sidebar: var(--sidebar);
+  --color-chart-5: var(--chart-5);
+  --color-chart-4: var(--chart-4);
+  --color-chart-3: var(--chart-3);
+  --color-chart-2: var(--chart-2);
+  --color-chart-1: var(--chart-1);
+  --color-ring: var(--ring);
+  --color-input: var(--input);
+  --color-border: var(--border);
+  --color-destructive: var(--destructive);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-accent: var(--accent);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-muted: var(--muted);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-secondary: var(--secondary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-primary: var(--primary);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-popover: var(--popover);
+  --color-card-foreground: var(--card-foreground);
+  --color-card: var(--card);
+  --color-room: var(--room);
+  --color-tray: var(--tray);
+  --color-paper: var(--paper);
+  --color-safelight: var(--safelight);
+  --radius-sm: calc(var(--radius) - 4px);
+  --radius-md: calc(var(--radius) - 2px);
+  --radius-lg: var(--radius);
+  --radius-xl: calc(var(--radius) + 4px);
+  --radius-2xl: calc(var(--radius) + 8px);
+  --radius-3xl: calc(var(--radius) + 12px);
+  --radius-4xl: calc(var(--radius) + 16px);
+  --font-sans:
+    'Noto Sans SC', 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei',
+    ui-sans-serif, system-ui, -apple-system, sans-serif;
+  --font-mono:
+    'IBM Plex Mono', ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas,
+    monospace;
+  --font-serif:
+    'Noto Serif SC', 'Songti SC', ui-serif, Georgia, serif;
+}
+
+:root,
+.dark {
+  --radius: 0.375rem;
+  /* 暗房色板 */
+  --room: #100f0d;
+  --tray: #171613;
+  --paper: #f4f2ec;
+  --safelight: #e4572e;
+
+  --background: #100f0d;
+  --foreground: #ece8df;
+  --card: #171613;
+  --card-foreground: #ece8df;
+  --popover: #1b1a17;
+  --popover-foreground: #ece8df;
+  --primary: #f4f2ec;
+  --primary-foreground: #15130f;
+  --secondary: #232119;
+  --secondary-foreground: #ece8df;
+  --muted: #232119;
+  --muted-foreground: #9a948a;
+  --accent: #2a2820;
+  --accent-foreground: #ece8df;
+  --destructive: #e4572e;
+  --border: #2f2c25;
+  --input: #35322a;
+  --ring: #e4572e;
+  --chart-1: #e4572e;
+  --chart-2: #9a948a;
+  --chart-3: #6b655b;
+  --chart-4: #b7b0a3;
+  --chart-5: #7a5344;
+  --sidebar: #171613;
+  --sidebar-foreground: #ece8df;
+  --sidebar-primary: #f4f2ec;
+  --sidebar-primary-foreground: #15130f;
+  --sidebar-accent: #232119;
+  --sidebar-accent-foreground: #ece8df;
+  --sidebar-border: #2f2c25;
+  --sidebar-ring: #e4572e;
+}
+
+@layer base {
+  * {
+    @apply border-border outline-ring/50;
+  }
+  html,
+  body {
+    background: var(--room);
+  }
+  body {
+    @apply bg-background text-foreground font-sans antialiased;
+    font-feature-settings: 'tnum' 1;
+  }
+  ::selection {
+    background: rgb(228 87 46 / 35%);
+  }
+}
+
+/* 暗房扫光：生成中的格子 */
+@keyframes safelight-scan {
+  0% {
+    transform: translateX(-120%);
+    opacity: 0;
+  }
+  18% {
+    opacity: 0.55;
+  }
+  100% {
+    transform: translateX(120%);
+    opacity: 0;
+  }
+}
+
+.scanline::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  background: linear-gradient(
+    100deg,
+    transparent 20%,
+    rgb(228 87 46 / 14%) 50%,
+    transparent 80%
+  );
+  animation: safelight-scan 1.8s ease-in-out infinite;
+}
+
+@keyframes paper-breathe {
+  0%,
+  100% {
+    opacity: 0.55;
+  }
+  50% {
+    opacity: 1;
+  }
+}
+
+.paper-breathe {
+  animation: paper-breathe 1.6s ease-in-out infinite;
+}
+
+/* 空相纸细纹理 */
+.empty-paper {
+  background-color: #14130f;
+  background-image:
+    linear-gradient(rgb(244 242 236 / 4%) 1px, transparent 1px),
+    linear-gradient(90deg, rgb(244 242 236 / 4%) 1px, transparent 1px);
+  background-size: 22px 22px;
+}
+
+/* 短片时间轴滑杆 */
+.film-range {
+  appearance: none;
+  -webkit-appearance: none;
+  background: #2a2721;
+  border-radius: 0;
+  cursor: pointer;
+}
+.film-range::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 12px;
+  height: 16px;
+  background: #f4f2ec;
+  border: 1px solid #100f0d;
+  border-radius: 2px;
+}
+.film-range::-moz-range-thumb {
+  width: 12px;
+  height: 16px;
+  background: #f4f2ec;
+  border: 1px solid #100f0d;
+  border-radius: 2px;
+}
+
+/* ===== 夜幕抓拍实验室 AFTER HOURS FRAME LAB（海蓝/钨丝金/磨砂玻璃，独立作用域） ===== */
+.afhl {
+  /* 深海军蓝基调 */
+  --af-navy: #0a1526;
+  --af-navy-2: #10223a;
+  --af-navy-3: #16304f;
+  --af-gold: #d8a94e;
+  --af-gold-soft: #e7c37a;
+  --af-ice: #dbe6f2;
+  --af-mist: #8ca3bd;
+  --af-glow: rgba(216, 169, 78, 0.25);
+  color: var(--af-ice);
+  background:
+    radial-gradient(1200px 500px at 80% -10%, rgba(22, 48, 79, 0.65), transparent 60%),
+    radial-gradient(900px 500px at 0% 10%, rgba(216, 169, 78, 0.10), transparent 55%),
+    var(--af-navy);
+  min-height: 100%;
+}
+.afhl-panel {
+  background: rgba(16, 34, 58, 0.55);
+  -webkit-backdrop-filter: blur(14px) saturate(130%);
+  backdrop-filter: blur(14px) saturate(130%);
+  border: 1px solid rgba(140, 163, 189, 0.18);
+  border-radius: 14px;
+}
+.afhl-chip {
+  border: 1px solid rgba(140, 163, 189, 0.28);
+  background: rgba(16, 34, 58, 0.5);
+  color: var(--af-mist);
+  border-radius: 999px;
+  transition: border-color 0.18s ease, color 0.18s ease, background 0.18s ease;
+}
+.afhl-chip.sel {
+  border-color: var(--af-gold);
+  color: var(--af-gold-soft);
+  background: rgba(216, 169, 78, 0.12);
+}
+.afhl-chip.locked {
+  border-color: var(--af-gold);
+  color: var(--af-ice);
+}
+.afhl-btn {
+  border: 1px solid rgba(216, 169, 78, 0.45);
+  color: var(--af-gold-soft);
+  background: rgba(216, 169, 78, 0.06);
+  border-radius: 999px;
+  transition: filter 0.18s ease, background 0.18s ease;
+}
+.afhl-btn:hover {
+  background: rgba(216, 169, 78, 0.16);
+  filter: brightness(1.05);
+}
+.afhl-btn.primary {
+  background: linear-gradient(135deg, #d8a94e, #b98a34);
+  color: #0a1526;
+  border-color: transparent;
+  font-weight: 600;
+}
+.afhl-btn.danger:hover {
+  background: rgba(216, 169, 78, 0.22);
+}
