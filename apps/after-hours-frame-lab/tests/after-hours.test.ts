@@ -91,6 +91,28 @@ function assertValid(card: StoryCard) {
   console.log('[ok] 桌游夜：moment 池含牌/骰子道具');
 }
 
+// 6b) 专属动作不得泄漏到其他任务
+{
+  for (const taskKey of ['after_work', 'birthday_after', 'reunion', 'business_coda', 'solo_wait']) {
+    const ctx = buildContext(
+      base({ mood: 'easy_gather', batchSize: 1, seed: 61, locks: { task: taskKey }, cross: {} }),
+      {},
+    );
+    const moments = availableFor('moment', ctx, {});
+    assert.ok(!moments.includes('rolling_dice'), `${taskKey} 不应出现摇骰子`);
+  }
+
+  for (const taskKey of ['after_work', 'birthday_after', 'reunion', 'board_game', 'solo_wait']) {
+    const ctx = buildContext(
+      base({ mood: 'easy_gather', batchSize: 1, seed: 62, locks: { task: taskKey }, cross: {} }),
+      {},
+    );
+    const moments = availableFor('moment', ctx, {});
+    assert.ok(!moments.includes('handshake_coda'), `${taskKey} 不应出现商务握手`);
+  }
+  console.log('[ok] 桌游/商务专属动作不会泄漏到其他任务');
+}
+
 // 7) 独处等候 → 仅 1 人
 {
   const spec = base({ cross: { persons: 4 } });

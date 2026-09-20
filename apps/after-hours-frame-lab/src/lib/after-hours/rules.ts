@@ -64,6 +64,13 @@ export function availableFor(layer: LayerKey, ctx: RuleContext, locks: EngineSpe
     case 'moment': {
       const task = byKey(TASK_POOL, ctx.taskKey);
       let keys = MOMENT_POOL.map((o) => o.key);
+      // 专属动作先从通用池排除，避免非对应任务随机抽中。
+      if (task?.key !== 'board_game') {
+        keys = keys.filter((k) => k !== 'rolling_dice');
+      }
+      if (task?.key !== 'business_coda') {
+        keys = keys.filter((k) => k !== 'handshake_coda');
+      }
       // 商务散场：克制的握手寒暄更贴合；不出现「摇骰子」
       if (task?.key === 'business_coda') {
         keys = keys.filter((k) => ['handshake_coda', 'answering', 'passing_item', 'gazing_window', 'adjusting_cuff', 'half_laugh', 'checking_phone', 'whisper_lean'].includes(k));
