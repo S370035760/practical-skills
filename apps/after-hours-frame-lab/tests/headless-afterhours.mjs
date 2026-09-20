@@ -48,8 +48,8 @@ async function ev(client, expression) {
   return r.result?.result?.value;
 }
 const SNAP = `(() => {
-  const cards = [...document.querySelectorAll('article')].map(a => a.innerText.replace(/\\s+/g,' ')); 
-  return cards.length + '::' + cards.map(c => c.match(/CARD \\d\\/\\d (.*?) 收藏/)?.[1] || '').join('|');
+  const cards = [...document.querySelectorAll('article')].map(a => a.innerText.replace(/[\\s\\n]+/g,' ').trim());
+  return cards.length + '::' + cards.join(' <|> ');
 })()`;
 
 async function clickText(client, text) {
@@ -83,9 +83,12 @@ async function main() {
   const seen = new Set();
   for (let i = 0; i < 5; i++) {
     await clickText(client, '生成一组');
-    await sleep(700);
-    const snap = await ev(client, SNAP);
-    checks.push(snap);
+    let snap = '';
+    for (let k = 0; k < 40; k++) {
+      await sleep(200);
+      snap = await ev(client, SNAP);
+      if (snap.split('::')[0] === '9') break;
+    }
     const n = Number(snap.split('::')[0]);
     if (n !== 9) throw new Error(`第 ${i + 1} 次生成卡片数应为 9，实际 ${n}`);
     const hasCard9 = /CARD 9\/9/.test(await ev(client, 'document.body.innerText'));
@@ -99,10 +102,13 @@ async function main() {
   await client.send('Emulation.setDeviceMetricsOverride', { width: 390, height: 844, deviceScaleFactor: 1, mobile: true });
   await client.send('Page.navigate', { url: baseUrl });
   for (let i = 0; i < 80; i++) { if ((await ev(client, 'document.readyState')) === 'complete') break; await sleep(200); }
-  await sleep(1200);
-  await clickText(client, '夜幕抓拍实验室');
-  await sleep(700);
-  if (!(await ev(client, `document.body.innerText.includes('今晚想记录的感觉')`))) throw new Error('手机宽度：夜幕实验室不可见');
+  await sleep(1600);
+  const mobTab = await ev(client, `(() => { const b=[...document.querySelectorAll('button')].find(x => x.textContent.includes('夜幕抓拍实验室')); if(!b) return false; b.scrollIntoView({block:'center'}); b.click(); return true; })()`);
+  if (!mobTab) throw new Error('手机宽度：未找到夜幕 Tab');
+  await sleep(900);
+  const mobVisible = (await ev(client, `document.body.innerText.includes('今晚想记录的感觉')`)) || (await ev(client, `document.body.innerText.includes('生成一组')`));
+  await sleep(200);
+  if (!mobVisible) throw new Error('手机宽度：夜幕实验室不可见');
 
   // 回归旧 Tab（九宫格 + 短片）
   await client.send('Emulation.setDeviceMetricsOverride', { width: 1280, height: 900, deviceScaleFactor: 1, mobile: false });

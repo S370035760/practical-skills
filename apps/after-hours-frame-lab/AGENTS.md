@@ -112,5 +112,6 @@
 
 - `pnpm dev` / `pnpm build` / `pnpm start`
 - `pnpm lint` · `pnpm ts-check`
-- `pnpm test:pure`（纯逻辑回归）
+- `pnpm test:pure`（纯逻辑回归：`tests/pure.test.ts` + `tests/film.test.ts` + 夜幕实验室 `tests/after-hours.test.ts`）
+- 浏览器端夜幕实验室冒烟：`node tests/headless-afterhours.mjs <wsPath> <chromePath> [baseUrl]`
 - `pnpm exec tsx tests/compose-check.ts`（sharp 合成回归，需 demo 素材）
