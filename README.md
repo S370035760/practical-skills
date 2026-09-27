@@ -1,19 +1,19 @@
-# 🦞 OpenClaw 实战技能库 - 让 AI 帮你赚钱
+# 🦞 OpenClaw 实战技能库
 
-> 6 个已验证的 AI 技能 + 持续更新 | 已帮助 XXX 人实现自动化 | 💰 技能定制/部署服务开放中
+> 仓库包含 6 个 OpenClaw 技能的源码、说明文档与可下载 `.skill` 包；其他 Codex Skills 与应用见下方目录。
 
 ---
 
-## 🎯 今日热门 - 6 个已发布技能
+## 🎯 仓库内的 6 个 OpenClaw 技能
 
-| 技能 | 功能 | 价格 | 状态 |
-|------|------|------|------|
-| 🚀 social-auto-publish | 一键发布到 5 个平台 | 299 元 | ✅ 可售 |
-| 🔒 soul-guard | AI 配置安全审计 | 199 元 | ✅ 可售 |
-| 🧠 memory-manager | 记忆自动整理 | 149 元 | ✅ 可售 |
-| 📧 email-automation | 邮件自动处理 | 199 元 | ✅ 可售 |
-| 📊 data-visualizer | 数据转图表 | 249 元 | ✅ 可售 |
-| 🕷️ scrapling-master | 网页抓取大师 | 399 元 | ✅ 可售 |
+| 技能 | 功能 | 价格 | 仓库证据 |
+|------|------|------|----------|
+| 🚀 social-auto-publish | 一键发布到 5 个平台 | 299 元 | [说明](./office/social-auto-publish/SKILL.md) · [技能包](./office/social-auto-publish/dist/social-auto-publish.skill) |
+| 🔒 soul-guard | AI 配置安全审计 | 199 元 | [说明](./office/soul-guard/SKILL.md) · [技能包](./office/soul-guard/dist/soul-guard.skill) |
+| 🧠 memory-manager | 记忆自动整理 | 149 元 | [说明](./office/memory-manager/SKILL.md) · [技能包](./office/memory-manager/dist/memory-manager.skill) |
+| 📧 email-automation | 邮件自动处理 | 199 元 | [说明](./office/email-automation/SKILL.md) · [技能包](./office/email-automation/dist/email-automation.skill) |
+| 📊 data-visualizer | 数据转图表 | 249 元 | [说明](./office/data-visualizer/SKILL.md) · [技能包](./office/data-visualizer/dist/data-visualizer.skill) |
+| 🕷️ scrapling-master | 网页抓取大师 | 399 元 | [说明](./office/scrapling-master/SKILL.md) · [技能包](./office/scrapling-master/dist/scrapling-master.skill) |
 
 **全套打包:** ~~1494 元~~ → **999 元** (限时优惠)
 
@@ -50,32 +50,37 @@
 
 ---
 
-## 📞 联系方式
+## 📞 项目入口与反馈边界
 
-**微信:** lifeqithlove88  
-**GitHub:** [@S370035760](https://github.com/S370035760)  
-**邮箱:** [添加邮箱]
+- 仓库所有者：[@S370035760](https://github.com/S370035760)
+- 当前仓库：[S370035760/practical-skills](https://github.com/S370035760/practical-skills)
+- [Issues](https://github.com/S370035760/practical-skills/issues) 当前限制新建，仓库也未开放 Discussions；因此这里不把它们写成可用的咨询入口。
+- GitHub 公开资料目前没有可核验的邮箱、网站或社交账号，因此 README 不展示未经确认的邮箱或微信号。
 
-**咨询请备注:** OpenClaw 技能咨询
+请勿在公开 Issue、评论或截图中上传客户图纸、尺寸、订单、密钥、Token、账号信息或其他敏感资料。需要提交问题时，请先脱敏并仅保留可复现问题所需的信息。
 
 ---
 
-## 🌟 客户案例
+## 🔎 可核验内容
 
-> "用了 social-auto-publish，每天节省 2 小时发布时间！" - 自媒体创业者  
-> "soul-guard 帮我们发现并修复了配置泄露，太值了！" - 初创公司 CTO  
-> "scrapling-master 抓取竞品数据，决策效率提升 10 倍！" - 电商运营
+- 上表每个技能名称都链接到仓库中的 `SKILL.md`，可直接核对功能、用法和配置要求。
+- 上表每个“技能包”都链接到仓库中实际存在的 `.skill` 文件。
+- 本仓库不把匿名评价、未经公开证据支持的节省时长或效率倍数当作客户案例。
 
 ---
 
 ## 🚀 快速开始
 
 ```bash
-# 1. Star 这个项目
-# 2. Fork 到你自己的账号
-# 3. 安装技能（待实现）
-openclaw skills install social-auto-publish
+git clone https://github.com/S370035760/practical-skills.git
+cd practical-skills
 ```
+
+1. 在上方技能表中打开目标技能的 `SKILL.md`，先核对依赖、配置和调用方法。
+2. 如果客户端支持导入 `.skill` 文件，下载对应的“技能包”并使用客户端提供的导入功能。
+3. 如果客户端支持目录型 Skill，使用相应的 `office/<skill-name>/` 目录。
+
+仓库当前没有可验证的 `openclaw skills install <name>` 一键安装实现，因此不提供未经实测的安装命令。具体导入步骤以你所用客户端的官方文档为准。
 
 ---
 
@@ -83,7 +88,7 @@ openclaw skills install social-auto-publish
 
 - ⭐ Stars: [![GitHub stars](https://img.shields.io/github/stars/S370035760/practical-skills)](https://github.com/S370035760/practical-skills/stargazers)
 - 🍴 Forks: [![GitHub forks](https://img.shields.io/github/forks/S370035760/practical-skills)](https://github.com/S370035760/practical-skills/network)
-- 📅 更新：每日更新
+- 📅 更新记录：[Commits](https://github.com/S370035760/practical-skills/commits/main)
 - 💰 变现：技能销售 + 定制服务
 
 ---
@@ -96,7 +101,7 @@ openclaw skills install social-auto-publish
 
 ---
 
-*Last updated: 2026-03-09*  
+*Last updated: 2026-09-28*
 *作者：[@S370035760](https://github.com/S370035760)*  
 *🦞 让每个人都能掌握 AI 技能，实现自动化赚钱*
 
