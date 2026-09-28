@@ -50,12 +50,13 @@
 
 ---
 
-## 📞 项目入口与反馈边界
+## 📞 项目入口与联系方式
 
 - 仓库所有者：[@S370035760](https://github.com/S370035760)
 - 当前仓库：[S370035760/practical-skills](https://github.com/S370035760/practical-skills)
+- 微信：`lifewithlove99`（仓库所有者已确认）
+- 邮箱：[fief6464@gmail.com](mailto:fief6464@gmail.com)（仓库所有者已确认）
 - [Issues](https://github.com/S370035760/practical-skills/issues) 当前限制新建，仓库也未开放 Discussions；因此这里不把它们写成可用的咨询入口。
-- GitHub 公开资料目前没有可核验的邮箱、网站或社交账号，因此 README 不展示未经确认的邮箱或微信号。
 
 请勿在公开 Issue、评论或截图中上传客户图纸、尺寸、订单、密钥、Token、账号信息或其他敏感资料。需要提交问题时，请先脱敏并仅保留可复现问题所需的信息。
 
