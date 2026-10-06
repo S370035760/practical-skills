@@ -42,7 +42,7 @@
 
 1. 准备你有权使用的平面图，以及场地长宽、入口和窗的位置。
 2. 标出不可移动设施、用途和最希望表达的问题；客户信息、地址等敏感内容请先脱敏。
-3. [申请一次免费效果预览](https://www.goofish.com/item?id=1080049343062)，或添加微信 **lifewithlove99** 咨询。预览只用于前期讨论，不含完整布局服务；是否承接、价格和交付范围以平台商品详情及双方确认内容为准。
+3. [申请一次免费效果预览](https://www.goofish.com/item?id=1080049343062)，或添加微信 **lifewithlove88** 咨询。预览只用于前期讨论，不含完整布局服务；是否承接、价格和交付范围以平台商品详情及双方确认内容为准。
 
 不方便公开图纸？请勿在公开 Issue、评论或截图中上传客户图纸、尺寸、订单、密钥、Token 或账号信息。
 
@@ -53,7 +53,7 @@
 ## 联系与反馈
 
 - 仓库所有者：[@S370035760](https://github.com/S370035760)
-- 微信：`lifewithlove99`
+- 微信：`lifewithlove88`
 - 邮箱：[fief6464@gmail.com](mailto:fief6464@gmail.com)
 - 当前仓库：[S370035760/practical-skills](https://github.com/S370035760/practical-skills)
 
