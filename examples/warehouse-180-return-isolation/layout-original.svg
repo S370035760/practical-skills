@@ -1,0 +1,69 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 2050 1260" font-family="Noto Sans CJK SC">
+  <rect x="0" y="0" width="2050" height="1260" fill="#FFFFFF"/>
+
+  <text x="1025" y="48" font-size="40" font-weight="bold" fill="#202124" text-anchor="middle">180㎡电商仓库二维分区示意图（概念版）</text>
+
+  <!-- 中央通道（底层） x0-18, y4-6 -->
+  <rect x="160" y="530" width="1800" height="200" fill="#DFE3E6" stroke="#B0B7BC" stroke-width="2"/>
+  <text x="1060" y="642" font-size="34" font-weight="bold" fill="#5F6368" text-anchor="middle">中央通道 2m（36㎡）</text>
+
+  <!-- 北排 y6-10 -->
+  <rect x="160" y="130" width="400" height="400" fill="#4A90D9" stroke="#FFFFFF" stroke-width="3"/>
+  <text x="360" y="318" font-size="44" font-weight="bold" fill="#FFFFFF" text-anchor="middle">A 收货暂存</text>
+  <text x="360" y="372" font-size="38" font-weight="bold" fill="#FFFFFF" text-anchor="middle">16㎡</text>
+
+  <rect x="560" y="130" width="1000" height="400" fill="#7CB342" stroke="#FFFFFF" stroke-width="3"/>
+  <text x="1060" y="318" font-size="44" font-weight="bold" fill="#FFFFFF" text-anchor="middle">B 存储</text>
+  <text x="1060" y="372" font-size="38" font-weight="bold" fill="#FFFFFF" text-anchor="middle">40㎡</text>
+
+  <rect x="1560" y="130" width="400" height="400" fill="#ED8F03" stroke="#FFFFFF" stroke-width="3"/>
+  <text x="1760" y="318" font-size="44" font-weight="bold" fill="#FFFFFF" text-anchor="middle">C 发货暂存</text>
+  <text x="1760" y="372" font-size="38" font-weight="bold" fill="#FFFFFF" text-anchor="middle">16㎡</text>
+
+  <!-- 南排 y0-4 -->
+  <rect x="160" y="730" width="400" height="400" fill="#D0021B" stroke="#FFFFFF" stroke-width="3"/>
+  <text x="360" y="918" font-size="44" font-weight="bold" fill="#FFFFFF" text-anchor="middle">D 退货隔离</text>
+  <text x="360" y="972" font-size="38" font-weight="bold" fill="#FFFFFF" text-anchor="middle">16㎡</text>
+
+  <rect x="560" y="730" width="1000" height="400" fill="#8E44AD" stroke="#FFFFFF" stroke-width="3"/>
+  <text x="1060" y="918" font-size="44" font-weight="bold" fill="#FFFFFF" text-anchor="middle">E 拣选复核包装</text>
+  <text x="1060" y="972" font-size="38" font-weight="bold" fill="#FFFFFF" text-anchor="middle">40㎡</text>
+
+  <rect x="1560" y="730" width="400" height="400" fill="#8D6E63" stroke="#FFFFFF" stroke-width="3"/>
+  <text x="1760" y="918" font-size="44" font-weight="bold" fill="#FFFFFF" text-anchor="middle">F 包材</text>
+  <text x="1760" y="972" font-size="38" font-weight="bold" fill="#FFFFFF" text-anchor="middle">16㎡</text>
+
+  <!-- 外墙（粗线，西/东通道端开口） -->
+  <path d="M160,130 H1960 M160,1130 H1960 M160,130 V560 M160,700 V1130 M1960,130 V560 M1960,700 V1130"
+        stroke="#202124" stroke-width="6" fill="none"/>
+
+  <!-- 入口 / 出货口标注 -->
+  <text x="215" y="645" font-size="28" font-weight="bold" fill="#202124">← 入口</text>
+  <text x="1900" y="645" font-size="28" font-weight="bold" fill="#202124" text-anchor="end">出货口 →</text>
+
+  <!-- 顶部 18m 尺寸线 -->
+  <line x1="160" y1="90" x2="1960" y2="90" stroke="#202124" stroke-width="2"/>
+  <line x1="160" y1="80" x2="160" y2="100" stroke="#202124" stroke-width="2"/>
+  <line x1="1960" y1="80" x2="1960" y2="100" stroke="#202124" stroke-width="2"/>
+  <text x="1060" y="82" font-size="30" fill="#202124" text-anchor="middle">18m</text>
+
+  <!-- 左侧 10m 尺寸线 -->
+  <line x1="110" y1="130" x2="110" y2="1130" stroke="#202124" stroke-width="2"/>
+  <line x1="100" y1="130" x2="120" y2="130" stroke="#202124" stroke-width="2"/>
+  <line x1="100" y1="1130" x2="120" y2="1130" stroke="#202124" stroke-width="2"/>
+  <text x="82" y="630" font-size="30" fill="#202124" text-anchor="middle" transform="rotate(-90 82 630)">10m</text>
+
+  <!-- 右侧通道 2m 尺寸线 -->
+  <line x1="2005" y1="530" x2="2005" y2="730" stroke="#202124" stroke-width="2"/>
+  <line x1="1995" y1="530" x2="2015" y2="530" stroke="#202124" stroke-width="2"/>
+  <line x1="1995" y1="730" x2="2015" y2="730" stroke="#202124" stroke-width="2"/>
+  <text x="2030" y="630" font-size="26" fill="#202124" text-anchor="middle" transform="rotate(-90 2030 630)">2m</text>
+
+  <!-- 北箭头 -->
+  <polygon points="2005,145 1993,175 2017,175" fill="#202124"/>
+  <text x="2005" y="200" font-size="28" font-weight="bold" fill="#202124" text-anchor="middle">N</text>
+
+  <!-- 底部注释 -->
+  <text x="1025" y="1185" font-size="25" fill="#D0021B" text-anchor="middle" font-weight="bold">● D退货隔离区（红色）位于西南角：退货由西入口直接进入隔离，与东北角C发货暂存区分处对角，物理分离防混入</text>
+  <text x="1025" y="1222" font-size="23" fill="#5F6368" text-anchor="middle">固定尺寸概念分区示意｜上方为北｜面积合计 180㎡｜非施工图、非消防审批/货架深化设计</text>
+</svg>
