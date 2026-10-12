@@ -1,0 +1,4 @@
+SHA256  bytes  file
+17245FFA93584BF8598C82F04B7B4572C15BC246395D25637C190D1D9961FB58  9235081  smed-event-first-v4.mp4
+1B596DD7A6F351E148175FE671A072352E1FFED70C0CBF338F05AA60B08C14B3  3969  smed-event-first-v4.srt
+Accepted V4: 1080x1920 H264/AAC, 191.6 seconds; full decode passed. Same designed demonstration, not customer achieved results. Prior versions retained.

@@ -7,4 +7,8 @@ Files copied unchanged from the accepted owned demonstration.
 Original PNG: 4100x2520. Historical V2: 1080x1920 H264/AAC, 83.3 seconds.
 38275D28556DC00C4321BC07864FC4C86B6AC35C6FC43B3AEC78DEEEC9487A0A  6185657  warehouse-180-marketing-v3.mp4
 B6E5553C14ECE54DD7C59A47A14C355A5062B568B4EBAD5BB9606A9645ED4923  2662  warehouse-180-marketing-v3.srt
-Recommended V3: 1080x1920 H264/AAC, 114.966667 seconds; full decode passed.
+Historical V3: 1080x1920 H264/AAC, 114.966667 seconds; full decode passed.
+
+05AF843F24750ABFBA58EDBC4692FF4B562B43BB6C810D3CEF988DDAC154BA97  9777979  warehouse-180-event-first-v4.mp4
+7033B7FE394C0EFE4CD8D1F63812C7852E9E9462D8A7871CFEFEA0965CD3E4A5  4273  warehouse-180-event-first-v4.srt
+Recommended V4: 1080x1920 H264/AAC, 197.966667 seconds; accepted platform-sized copy, full decode passed. Same owned demonstration; no new invocation.
