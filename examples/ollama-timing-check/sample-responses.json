@@ -1,0 +1,4 @@
+[
+  {"done":true,"total_duration":8000000000,"load_duration":4000000000,"prompt_eval_duration":1000000000,"eval_count":40,"eval_duration":2000000000},
+  {"done":true,"total_duration":3500000000,"load_duration":100000000,"prompt_eval_duration":1000000000,"eval_count":40,"eval_duration":2000000000}
+]
