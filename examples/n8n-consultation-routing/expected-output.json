@@ -1,0 +1,37 @@
+[
+  {
+    "json": {
+      "request_id": "a",
+      "contact": "c",
+      "need": "n",
+      "route": "REVIEW",
+      "reason": ""
+    }
+  },
+  {
+    "json": {
+      "request_id": "b",
+      "need": "n",
+      "route": "FIX",
+      "reason": "contact"
+    }
+  },
+  {
+    "json": {
+      "request_id": "a",
+      "contact": "c",
+      "need": "n",
+      "route": "HOLD",
+      "reason": "duplicate_in_batch"
+    }
+  },
+  {
+    "json": {
+      "request_id": " ",
+      "contact": "c",
+      "need": "n",
+      "route": "FIX",
+      "reason": "request_id"
+    }
+  }
+]

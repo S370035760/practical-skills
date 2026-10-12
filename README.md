@@ -24,7 +24,7 @@
 
 ## 180平方米仓库退货隔离
 
-退货箱与待发货怎样在位置和状态上分开？新案例包含固定分区业务输入、技能原始PNG/SVG、83.3秒完整配音讲解，以及接班人能用的检查动作。
+退货箱与待发货怎样在位置和状态上分开？新案例包含固定分区业务输入、技能原始PNG/SVG、约115秒新版完整配音讲解，以及接班人能用的检查动作。
 
 [查看180㎡仓库案例与完整视频](./examples/warehouse-180-return-isolation/README.md)。这是自有虚拟场景，预设分区转图，不是客户现场或自主优化结果。
 
@@ -56,6 +56,10 @@
 
 - 换型复盘：[查看SMED报告的两张实际图、可复制输入及离线报告](./examples/smed-changeover-report/README.md)，或直接查看[Capafy下载商品](https://capafy.ai/zh/agent/smed-visual-changeover-report-kit/9311408133)。演示中区分动作时长、停机历时与未验证改善方案。
 - 已有订单需要排生产顺序：[看三张订单的EDD/SPT实际对比、甘特图与复算代码](./examples/production-priority-three-orders/README.md)，或查看 [Production Scheduling Pro](https://capafy.ai/zh/agent/production-scheduling-pro/2804152601)。这是独立下载商品，不与SMED报告或上方Coze商品自动串联；购买内容和运行要求见对应商品页。
+
+## AI工作流实操配套
+
+- [咨询表单先分3条路：n8n代码、输入输出与9个本地检查](./examples/n8n-consultation-routing/README.md)。纯JavaScript教学逻辑，不发送消息；明确当前批次与跨次执行的去重边界，未部署为生产工作流。
 
 ## 仓库里的其他项目
 
