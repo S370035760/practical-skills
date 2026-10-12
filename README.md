@@ -52,6 +52,11 @@
 
 不方便公开图纸？请勿在公开 Issue、评论或截图中上传客户图纸、尺寸、订单、密钥、Token 或账号信息。
 
+## 生产运营工具
+
+- 换型复盘：[查看SMED报告的两张实际图、可复制输入及离线报告](./examples/smed-changeover-report/README.md)，或直接查看[Capafy下载商品](https://capafy.ai/zh/agent/smed-visual-changeover-report-kit/9311408133)。演示中区分动作时长、停机历时与未验证改善方案。
+- 已有订单需要排生产顺序：[Production Scheduling Pro](https://capafy.ai/zh/agent/production-scheduling-pro/2804152601)。这是独立下载商品，不与SMED报告或上方Coze商品自动串联；购买内容和运行要求见对应商品页。
+
 ## 仓库里的其他项目
 
 仓库还保留 OpenClaw 技能包（见 `office/`）以及 Codex Skills（`negative-asset-global-allocation/`、`reference-image-to-threejs-asset/`）。它们是独立项目，不属于上面两款 Coze 商品的交付范围，也不共用价格或服务承诺。

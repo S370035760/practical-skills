@@ -1,0 +1,20 @@
+{
+  "before_elapsed": 45.0,
+  "before_work_minutes": 52,
+  "after_elapsed": 30.0,
+  "saved_minutes": 15.0,
+  "reduction_percent": 33.33333333333333,
+  "monthly_released_minutes": null,
+  "potential_good_units": null,
+  "saleable_increment_units": null,
+  "monthly_contribution": null,
+  "economic_missing": [
+    "changes_per_day",
+    "workdays",
+    "units_per_hour",
+    "good_yield",
+    "saleable_increment_units",
+    "unit_contribution",
+    "incremental_period_cost"
+  ]
+}
