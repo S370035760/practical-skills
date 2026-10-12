@@ -1,0 +1,21 @@
+{
+  "creative_id": "production-priority-three-orders-20261012",
+  "revision": "event-first-complete-20261013",
+  "title": "上午清掉两张小单，急单却晚3小时：同样7小时，先做谁才不误交期？",
+  "file": "priority-event-complete.mp4",
+  "captions": "captions.srt",
+  "duration_seconds": 266.6,
+  "width": 720,
+  "height": 1280,
+  "video_codec": "h264",
+  "audio_codec": "aac",
+  "bytes": 5519096,
+  "sha256": "3186520F2792D174B901E0F74EFC4AC78342C3B5DDF3686C7C88AA2E79B3AF60",
+  "scene_count": 10,
+  "caption_cue_count": 59,
+  "input_provenance": "Synthetic three-order demonstration; no customer data or field improvement claim.",
+  "output_provenance": "Local Production Scheduling Pro outputs with 63 independent audit checks; see adjacent JSON and audit.py.",
+  "limits": "Single-line continuous-calendar demonstration. EDD and SPT are ordering rules, not universal optimizers or delivery guarantees. Free example excludes the paid scheduling engine.",
+  "ai_disclosure": "AI-assisted production with synthesized Mandarin narration.",
+  "purchase_url": "https://capafy.ai/zh/agent/production-scheduling-pro/2804152601"
+}
