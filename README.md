@@ -63,6 +63,8 @@
 
 - [本地AI慢先别换显卡：Ollama计时检查、教学输入与18项本地测试](./examples/ollama-timing-check/README.md)。只读取已有响应，不调用模型、不测硬件；区分等待阶段与根因，教学数值不当跑分。
 
+- [AI客服单库密钥检查：原代码、10项离线测试与凭据登记表](./examples/dify-scope-check/README.md)。先在假数据上练习，再由获授权的维护者核验真实实例；不把GET检查当作密钥只读权限认证。
+
 ## 仓库里的其他项目
 
 仓库还保留 OpenClaw 技能包（见 `office/`）以及 Codex Skills（`negative-asset-global-allocation/`、`reference-image-to-threejs-asset/`）。它们是独立项目，不属于上面两款 Coze 商品的交付范围，也不共用价格或服务承诺。
