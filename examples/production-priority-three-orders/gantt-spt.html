@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Production Gantt Chart — SPT</title>
+<style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; background: #0d1117; color: #c9d1d9; padding: 24px; }
+.header { margin-bottom: 24px; }
+.header h1 { font-size: 24px; color: #58a6ff; }
+.header .meta { color: #8b949e; font-size: 14px; margin-top: 4px; }
+.kpi-grid { display: flex; gap: 16px; margin-bottom: 24px; flex-wrap: wrap; }
+.kpi-card { background: #161b22; border: 1px solid #30363d; border-radius: 8px; padding: 16px 20px; min-width: 140px; }
+.kpi-card .label { font-size: 12px; color: #8b949e; text-transform: uppercase; letter-spacing: 0.5px; }
+.kpi-card .value { font-size: 28px; font-weight: 700; color: #e6edf3; margin-top: 4px; }
+.kpi-card .value.green { color: #3fb950; }
+.kpi-card .value.red { color: #f85149; }
+.kpi-card .value.yellow { color: #d29922; }
+.gantt-container { background: #161b22; border: 1px solid #30363d; border-radius: 8px; padding: 20px; overflow-x: auto; }
+.timeline { position: relative; height: 30px; margin-bottom: 8px; border-bottom: 1px solid #30363d; }
+.timeline .tick { position: absolute; font-size: 11px; color: #8b949e; transform: translateX(-50%); top: 16px; }
+.machine-row { display: flex; margin-bottom: 6px; min-height: 48px; align-items: center; }
+.machine-label { width: 120px; flex-shrink: 0; font-size: 13px; font-weight: 600; color: #e6edf3; padding: 4px 12px; }
+.machine-bars { flex: 1; position: relative; height: 40px; background: #0d1117; border-radius: 4px; }
+.bar { position: absolute; top: 4px; height: 32px; border-radius: 4px; display: flex; align-items: center; justify-content: space-between; padding: 0 8px; font-size: 11px; font-weight: 600; cursor: pointer; transition: filter 0.15s; overflow: hidden; white-space: nowrap; min-width: 30px; }
+.bar:hover { filter: brightness(1.2); z-index: 2; }
+.bar-label { color: white; text-shadow: 0 1px 2px rgba(0,0,0,0.4); }
+.bar-time { color: rgba(255,255,255,0.7); font-size: 10px; }
+.risk-section { margin-top: 24px; }
+.risk-section h2 { font-size: 18px; color: #58a6ff; margin-bottom: 12px; }
+.risk-table { width: 100%; border-collapse: collapse; }
+.risk-table th, .risk-table td { padding: 10px 12px; text-align: left; border-bottom: 1px solid #30363d; font-size: 13px; }
+.risk-table th { color: #8b949e; font-weight: 600; text-transform: uppercase; font-size: 11px; letter-spacing: 0.5px; }
+.risk-table tr:hover { background: #1c2128; }
+.legend { display: flex; gap: 16px; margin-top: 16px; font-size: 13px; }
+.legend-item { display: flex; align-items: center; gap: 6px; }
+.legend-dot { width: 12px; height: 12px; border-radius: 50%; }
+</style>
+</head>
+<body>
+<div class="header">
+  <h1>📊 Production Gantt Chart</h1>
+  <div class="meta">Algorithm: SPT | Generated: 2026-10-12T10:20:50.404645</div>
+</div>
+<div class="kpi-grid">
+  <div class="kpi-card">
+    <div class="label">Makespan</div>
+    <div class="value">7.0h</div>
+  </div>
+  <div class="kpi-card">
+    <div class="label">On-Time Delivery</div>
+    <div class="value red">66.7%</div>
+  </div>
+  <div class="kpi-card">
+    <div class="label">Avg Tardiness</div>
+    <div class="value red">1.0h</div>
+  </div>
+  <div class="kpi-card">
+    <div class="label">At-Risk Orders</div>
+    <div class="value red">1</div>
+  </div>
+  <div class="kpi-card">
+    <div class="label">Avg Flow Time</div>
+    <div class="value">3.7h</div>
+  </div>
+</div>
+<div class="gantt-container">
+  <div class="timeline"><div class="tick" style="left:0%">10/12 08:00</div>
+<div class="tick" style="left:25%">10/12 09:45</div>
+<div class="tick" style="left:50%">10/12 11:30</div>
+<div class="tick" style="left:75%">10/12 13:15</div>
+<div class="tick" style="left:100%">10/12 15:00</div></div>
+  
+        <div class="machine-row">
+          <div class="machine-label" style="border-left: 4px solid #4C6EF5">default</div>
+          <div class="machine-bars">
+            
+            <div class="bar" style="left:0.00%;width:14.29%;background:#4C6EF5"
+                 title="B-SHORT — 短单B
+Start: 10/12 08:00
+End: 10/12 09:00
+Duration: 1.0h">
+              <span class="bar-label">B-SHORT</span>
+              <span class="bar-time">1.0h</span>
+            </div>
+
+            <div class="bar" style="left:14.29%;width:28.57%;background:#F06595"
+                 title="C-MEDIUM — 普通单C
+Start: 10/12 09:00
+End: 10/12 11:00
+Duration: 2.0h">
+              <span class="bar-label">C-MEDIUM</span>
+              <span class="bar-time">2.0h</span>
+            </div>
+
+            <div class="bar" style="left:42.86%;width:57.14%;background:#20C997"
+                 title="A-URGENT — 交期紧单A
+Start: 10/12 11:00
+End: 10/12 15:00
+Duration: 4.0h">
+              <span class="bar-label">A-URGENT</span>
+              <span class="bar-time">4.0h</span>
+            </div>
+          </div>
+        </div>
+</div>
+<div class="legend">
+  <div class="legend-item"><div class="legend-dot" style="background:#3fb950"></div> On Track</div>
+  <div class="legend-item"><div class="legend-dot" style="background:#d29922"></div> At Risk</div>
+  <div class="legend-item"><div class="legend-dot" style="background:#f85149"></div> Critical</div>
+</div>
+<div class="risk-section">
+  <h2>⚠️ Risk Assessment</h2>
+  <table class="risk-table">
+    <thead>
+      <tr><th>Order ID</th><th>Product</th><th>Due Date</th><th>Completion</th><th>Slack</th><th>Risk</th><th>Mitigation</th></tr>
+    </thead>
+    <tbody>
+      
+      <tr>
+        <td><strong>A-URGENT</strong></td>
+        <td>交期紧单A</td>
+        <td>2026-10-12T12:00:00</td>
+        <td>2026-10-12T15:00</td>
+        <td>-3.0h</td>
+        <td>🟠 HIGH</td>
+        <td>Expedite + overtime recommended</td>
+      </tr>
+      <tr>
+        <td><strong>C-MEDIUM</strong></td>
+        <td>普通单C</td>
+        <td>2026-10-12T18:00:00</td>
+        <td>2026-10-12T11:00</td>
+        <td>7.0h</td>
+        <td>🟢 LOW</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><strong>B-SHORT</strong></td>
+        <td>短单B</td>
+        <td>2026-10-12T18:00:00</td>
+        <td>2026-10-12T09:00</td>
+        <td>9.0h</td>
+        <td>🟢 LOW</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+</body>
+</html>

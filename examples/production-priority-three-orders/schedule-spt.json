@@ -1,0 +1,90 @@
+{
+  "schedule": {
+    "algorithm": "SPT",
+    "created_at": "2026-10-12T10:20:50.404645",
+    "makespan_hours": 7.0,
+    "jobs": [
+      {
+        "order_id": "B-SHORT",
+        "product": "短单B",
+        "quantity": 500,
+        "due_date": "2026-10-12T18:00:00",
+        "machine": "default",
+        "start": "2026-10-12T08:00:00",
+        "end": "2026-10-12T09:00:00",
+        "setup_start": null,
+        "setup_end": null,
+        "duration_hours": 1.0
+      },
+      {
+        "order_id": "C-MEDIUM",
+        "product": "普通单C",
+        "quantity": 1000,
+        "due_date": "2026-10-12T18:00:00",
+        "machine": "default",
+        "start": "2026-10-12T09:00:00",
+        "end": "2026-10-12T11:00:00",
+        "setup_start": null,
+        "setup_end": null,
+        "duration_hours": 2.0
+      },
+      {
+        "order_id": "A-URGENT",
+        "product": "交期紧单A",
+        "quantity": 1000,
+        "due_date": "2026-10-12T12:00:00",
+        "machine": "default",
+        "start": "2026-10-12T11:00:00",
+        "end": "2026-10-12T15:00:00",
+        "setup_start": null,
+        "setup_end": null,
+        "duration_hours": 4.0
+      }
+    ]
+  },
+  "kpis": {
+    "algorithm": "SPT",
+    "makespan_hours": 7.0,
+    "total_orders": 3,
+    "on_time_delivery_pct": 66.7,
+    "avg_tardiness_hours": 1.0,
+    "max_tardiness_hours": 3.0,
+    "avg_flow_time_hours": 3.7,
+    "machine_utilization": {
+      "Main Line": 29.2
+    }
+  },
+  "bottlenecks": [],
+  "risks": [
+    {
+      "order_id": "A-URGENT",
+      "product": "交期紧单A",
+      "due_date": "2026-10-12T12:00:00",
+      "completion": "2026-10-12T15:00:00",
+      "slack_hours": -3.0,
+      "risk_level": "HIGH",
+      "emoji": "🟠",
+      "mitigation": "Expedite + overtime recommended"
+    },
+    {
+      "order_id": "C-MEDIUM",
+      "product": "普通单C",
+      "due_date": "2026-10-12T18:00:00",
+      "completion": "2026-10-12T11:00:00",
+      "slack_hours": 7.0,
+      "risk_level": "LOW",
+      "emoji": "🟢",
+      "mitigation": ""
+    },
+    {
+      "order_id": "B-SHORT",
+      "product": "短单B",
+      "due_date": "2026-10-12T18:00:00",
+      "completion": "2026-10-12T09:00:00",
+      "slack_hours": 9.0,
+      "risk_level": "LOW",
+      "emoji": "🟢",
+      "mitigation": ""
+    }
+  ]
+}

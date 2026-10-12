@@ -1,0 +1,8 @@
+{
+  "demo": "Synthetic three-order example. One continuous-calendar line, zero setup time, all materials ready at 08:00. Not customer data.",
+  "orders": [
+    {"id":"A-URGENT","product":"交期紧单A","quantity":1000,"cycle_time_per_unit":0.004,"setup_time":0,"due_date":"2026-10-12T12:00:00","release_date":"2026-10-12T08:00:00","material_eta":"2026-10-12T08:00:00","priority":3},
+    {"id":"B-SHORT","product":"短单B","quantity":500,"cycle_time_per_unit":0.002,"setup_time":0,"due_date":"2026-10-12T18:00:00","release_date":"2026-10-12T08:00:00","material_eta":"2026-10-12T08:00:00","priority":3},
+    {"id":"C-MEDIUM","product":"普通单C","quantity":1000,"cycle_time_per_unit":0.002,"setup_time":0,"due_date":"2026-10-12T18:00:00","release_date":"2026-10-12T08:00:00","material_eta":"2026-10-12T08:00:00","priority":3}
+  ]
+}

@@ -55,7 +55,7 @@
 ## 生产运营工具
 
 - 换型复盘：[查看SMED报告的两张实际图、可复制输入及离线报告](./examples/smed-changeover-report/README.md)，或直接查看[Capafy下载商品](https://capafy.ai/zh/agent/smed-visual-changeover-report-kit/9311408133)。演示中区分动作时长、停机历时与未验证改善方案。
-- 已有订单需要排生产顺序：[Production Scheduling Pro](https://capafy.ai/zh/agent/production-scheduling-pro/2804152601)。这是独立下载商品，不与SMED报告或上方Coze商品自动串联；购买内容和运行要求见对应商品页。
+- 已有订单需要排生产顺序：[看三张订单的EDD/SPT实际对比、甘特图与复算代码](./examples/production-priority-three-orders/README.md)，或查看 [Production Scheduling Pro](https://capafy.ai/zh/agent/production-scheduling-pro/2804152601)。这是独立下载商品，不与SMED报告或上方Coze商品自动串联；购买内容和运行要求见对应商品页。
 
 ## 仓库里的其他项目
 

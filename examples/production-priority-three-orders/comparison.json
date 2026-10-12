@@ -1,0 +1,44 @@
+{
+  "scenario": "Synthetic example; not a customer deployment",
+  "checks": 63,
+  "rules": {
+    "edd": {
+      "total_orders": 3,
+      "makespan_hours": 7.0,
+      "on_time_delivery_pct": 100.0,
+      "avg_tardiness_hours": 0.0,
+      "max_tardiness_hours": 0,
+      "avg_flow_time_hours": 5.3,
+      "sequence": [
+        "A-URGENT",
+        "B-SHORT",
+        "C-MEDIUM"
+      ],
+      "completion": {
+        "A-URGENT": "2026-10-12T12:00:00",
+        "B-SHORT": "2026-10-12T13:00:00",
+        "C-MEDIUM": "2026-10-12T15:00:00"
+      },
+      "tardy_orders": 0
+    },
+    "spt": {
+      "total_orders": 3,
+      "makespan_hours": 7.0,
+      "on_time_delivery_pct": 66.7,
+      "avg_tardiness_hours": 1.0,
+      "max_tardiness_hours": 3.0,
+      "avg_flow_time_hours": 3.7,
+      "sequence": [
+        "B-SHORT",
+        "C-MEDIUM",
+        "A-URGENT"
+      ],
+      "completion": {
+        "B-SHORT": "2026-10-12T09:00:00",
+        "C-MEDIUM": "2026-10-12T11:00:00",
+        "A-URGENT": "2026-10-12T15:00:00"
+      },
+      "tardy_orders": 1
+    }
+  }
+}
