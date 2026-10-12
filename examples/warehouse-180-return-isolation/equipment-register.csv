@@ -1,0 +1,3 @@
+"equipment_id","name","zone_id","x_m","y_m","length_m","width_m","height_m","rotation_deg","operating_clearance","maintenance_clearance","dimension_source","source_plan_version","verification_state","notes"
+"EQ-001","","","","","","","","","","","","","未核","占位行；一台设备一行；复制时修改唯一ID"
+"EQ-002","","","","","","","","","","","","","未核","尺寸未知留空并说明；不要填0假装已测量"
