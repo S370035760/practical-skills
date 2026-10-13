@@ -1,0 +1,90 @@
+{
+  "schedule": {
+    "algorithm": "EDD",
+    "created_at": "2026-10-12T14:59:02.630152",
+    "makespan_hours": 4.5,
+    "jobs": [
+      {
+        "order_id": "M-A",
+        "product": "急单A",
+        "quantity": 100,
+        "due_date": "2026-10-12T13:00:00",
+        "machine": "default",
+        "start": "2026-10-12T11:00:00",
+        "end": "2026-10-12T13:00:00",
+        "setup_start": null,
+        "setup_end": null,
+        "duration_hours": 2.0
+      },
+      {
+        "order_id": "M-B",
+        "product": "普通单B",
+        "quantity": 100,
+        "due_date": "2026-10-12T17:00:00",
+        "machine": "default",
+        "start": "2026-10-12T13:00:00",
+        "end": "2026-10-12T14:00:00",
+        "setup_start": null,
+        "setup_end": null,
+        "duration_hours": 1.0
+      },
+      {
+        "order_id": "M-C",
+        "product": "普通单C",
+        "quantity": 100,
+        "due_date": "2026-10-12T18:00:00",
+        "machine": "default",
+        "start": "2026-10-12T14:00:00",
+        "end": "2026-10-12T15:30:00",
+        "setup_start": null,
+        "setup_end": null,
+        "duration_hours": 1.5
+      }
+    ]
+  },
+  "kpis": {
+    "algorithm": "EDD",
+    "makespan_hours": 4.5,
+    "total_orders": 3,
+    "on_time_delivery_pct": 100.0,
+    "avg_tardiness_hours": 0.0,
+    "max_tardiness_hours": 0.0,
+    "avg_flow_time_hours": 3.2,
+    "machine_utilization": {
+      "Main Line": 18.8
+    }
+  },
+  "bottlenecks": [],
+  "risks": [
+    {
+      "order_id": "M-A",
+      "product": "急单A",
+      "due_date": "2026-10-12T13:00:00",
+      "completion": "2026-10-12T13:00:00",
+      "slack_hours": 0.0,
+      "risk_level": "MEDIUM",
+      "emoji": "🟡",
+      "mitigation": "Monitor closely, add buffer"
+    },
+    {
+      "order_id": "M-C",
+      "product": "普通单C",
+      "due_date": "2026-10-12T18:00:00",
+      "completion": "2026-10-12T15:30:00",
+      "slack_hours": 2.5,
+      "risk_level": "MEDIUM",
+      "emoji": "🟡",
+      "mitigation": "Monitor closely, add buffer"
+    },
+    {
+      "order_id": "M-B",
+      "product": "普通单B",
+      "due_date": "2026-10-12T17:00:00",
+      "completion": "2026-10-12T14:00:00",
+      "slack_hours": 3.0,
+      "risk_level": "MEDIUM",
+      "emoji": "🟡",
+      "mitigation": "Monitor closely, add buffer"
+    }
+  ]
+}

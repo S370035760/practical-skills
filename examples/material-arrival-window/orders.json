@@ -1,0 +1,5 @@
+[
+  {"id":"M-A","product":"急单A","quantity":100,"due_date":"2026-10-12T13:00:00","cycle_time_per_unit":0.02,"setup_time":0,"release_date":"2026-10-12T08:00:00","material_eta":"2026-10-12T11:00:00"},
+  {"id":"M-B","product":"普通单B","quantity":100,"due_date":"2026-10-12T17:00:00","cycle_time_per_unit":0.01,"setup_time":0,"release_date":"2026-10-12T08:00:00","material_eta":"2026-10-12T08:00:00"},
+  {"id":"M-C","product":"普通单C","quantity":100,"due_date":"2026-10-12T18:00:00","cycle_time_per_unit":0.015,"setup_time":0,"release_date":"2026-10-12T08:00:00","material_eta":"2026-10-12T08:00:00"}
+]
