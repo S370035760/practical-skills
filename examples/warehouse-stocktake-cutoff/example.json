@@ -1,0 +1,18 @@
+{
+  "scenario": "原创合成教学数据，不是客户盘点或Coze运行结果",
+  "scope_id": "S1",
+  "scope": {"sku":"苹果原料A","lot":"LOT1","location":"R01","owner":"自有","status":"可用","unit":"kg"},
+  "snapshot_time": "2026-09-30T23:59:59",
+  "cutoff_time": "2026-10-01T08:00:00",
+  "count_time": "2026-10-01T08:30:00",
+  "opening_quantity": 200,
+  "observed_quantity": 195,
+  "completeness": "已核齐",
+  "movements": [
+    {"id":"M001","event_time":"2026-10-01T07:30:00","scope_id":"S1","in":60,"out":0,"posting":"已入账","document":"RCV001","evidence":"已核"},
+    {"id":"M002","event_time":"2026-10-01T07:45:00","scope_id":"S1","in":0,"out":40,"posting":"已入账","document":"ISS001","evidence":"已核"},
+    {"id":"M003","event_time":"2026-10-01T08:10:00","scope_id":"S1","in":0,"out":15,"posting":"已入账","document":"ISS002","evidence":"已核"}
+  ],
+  "expected": {"pre_in":60,"pre_out":40,"book_at_cutoff":220,"post_in":0,"post_out":15,"physical_at_cutoff":210,"difference":-10,"wrong_old_snapshot_difference":10,"book_at_count":205,"difference_at_count":-10},
+  "boundary": "只核同一范围kg数量与业务时点；不估值、不调账、不指认损耗原因，不替代专业盘点或财务审计"
+}
