@@ -1,0 +1,33 @@
+{
+  "scenario": "作者设计的鲜切加工批次追溯演练，不是真实客户数据",
+  "unit": "kg",
+  "snapshot_assumptions": "同一冻结时点，无期初、退回或在途；仅演示已知加工关系，不代表实际风险范围或食品放行判断",
+  "raw_lots": [
+    {"id":"P1","received_kg":40,"consumption":{"T1":25,"T2":10},"remaining_kg":5},
+    {"id":"P2","received_kg":30,"consumption":{"T1":15,"T3":12},"remaining_kg":3}
+  ],
+  "transformations": [
+    {"id":"T1","inputs":{"P1":25,"P2":15},"outputs":{"F1":32},"byproduct_kg":8},
+    {"id":"T2","inputs":{"P1":10},"outputs":{"F2":8},"byproduct_kg":2},
+    {"id":"T3","inputs":{"P2":12},"outputs":{"F3":9},"byproduct_kg":3}
+  ],
+  "finished_lots": [
+    {"id":"F1","produced_kg":32,"on_site_kg":6,"destinations":{"门店A":12,"门店B":14}},
+    {"id":"F2","produced_kg":8,"on_site_kg":3,"destinations":{"门店A":5}},
+    {"id":"F3","produced_kg":9,"on_site_kg":4,"destinations":{"门店C":5}}
+  ],
+  "trigger_raw_lot": "P1",
+  "expected": {
+    "related_transformations":["T1","T2"],
+    "related_finished_lots":["F1","F2"],
+    "affected_finished_kg":40,
+    "affected_finished_on_site_kg":9,
+    "affected_finished_shipped_kg":31,
+    "affected_finished_destinations_kg":{"门店A":17,"门店B":14},
+    "trigger_raw_remaining_kg":5,
+    "all_finished_kg":49,
+    "all_finished_on_site_kg":13,
+    "all_finished_shipped_kg":36
+  },
+  "method_boundary": "混批按关联成品整批列出，不按投入比例截取；真实事件中共线、接触、误投料及缺记录需继续专业核查。不是Coze技能输出。"
+}
