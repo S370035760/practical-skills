@@ -1,0 +1,5 @@
+case,reference_count,observed_count,status,issue_device,issue_aisle,notes
+normal,7,7,PASS,,,Limited to tagged equipment XY bounds and reserved aisles
+aisle-intrusion,7,7,FAIL,W1,A-M,W1 moved east 5.4m and south 0.3m in actual scene
+missing-p2,7,6,FAIL,P2,,P2 actually removed from saved scene
+missing-coordinates,7,7,UNKNOWN,W1,,W1 bbox evidence removed but geometry not deleted
