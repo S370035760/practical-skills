@@ -11,10 +11,11 @@ LeanEdge把AI接进具体工作：先给真实输入和可核对结果，再谈�
 | 仓库退货与待发货混放，接班人判断不清 | [180㎡退货隔离案例](./examples/warehouse-180-return-isolation/README.md) | 固定分区输入、原始输出、三张可填写核对表、完整配音视频 |
 | 换型停机复盘，不知道哪段值得改善 | [SMED换型报告](./examples/smed-changeover-report/README.md) | 动作计时、两张报告图、教学输入和离线报告 |
 | 三张订单同时催，先做哪张更合适 | [三单排产对比](./examples/production-priority-three-orders/README.md) | EDD/SPT对照、甘特图、复算代码和完整讲解 |
+| 注塑一班80件不良，明早会议先查哪两类 | [柏拉图质量分析实跑](./examples/injection-defect-pareto/README.md) | 原始六类数量、真实输出图、计算结果CSV和准确技能入口 |
 
 **下一步只选一件事：**有图纸想先看概念表达，按下方资料清单[申请一次效果预览](https://www.goofish.com/item?id=1080049343062)；想自己使用工具，进入与任务匹配的商品页。不要把图纸、客户资料或订单信息贴在公开评论里。
 
-关注方向：**LeanEdge**讲AI应用与管理实践，**LEANE-AI**讲自有技能的具体输入、结果与边界；两者分工不同，不用同一篇稿到处重复投放。
+关注方向：**LeanEdge**讲AI应用及其对工作、行业与学科的影响，**leanstart**承接自有技能的具体输入、结果与边界；原LEANE-AI停止后续经营，不用同一篇稿到处重复投放。
 
 ## 先选你要解决的问题
 
