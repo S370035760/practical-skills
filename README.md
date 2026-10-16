@@ -86,6 +86,10 @@ LeanEdge把AI接进具体工作：先给真实输入和可核对结果，再谈�
 
 - [AI客服单库密钥检查：原代码、10项离线测试与凭据登记表](./examples/dify-scope-check/README.md)。先在假数据上练习，再由获授权的维护者核验真实实例；不把GET检查当作密钥只读权限认证。
 
+## AI深度阅读
+
+- [AI开始跨越学科：一个物理学家的经历，让我重新想了5种专业能力的价值](./articles/ai-cross-disciplinary-judgment/README.md)。近万字原创分析，配4张图、可下载教学数据与原绘图脚本；区分参与者自述、研究证据、本文判断和教学假设，不冒充科学成果复现。
+
 ## 仓库里的其他项目
 
 仓库还保留 OpenClaw 技能包（见 `office/`）以及 Codex Skills（`negative-asset-global-allocation/`、`reference-image-to-threejs-asset/`）。它们是独立项目，不属于上面两款 Coze 商品的交付范围，也不共用价格或服务承诺。
